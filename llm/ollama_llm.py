@@ -21,7 +21,7 @@ def load_prompt_template():
         raise
 
 # Initialize model and prompt
-llm = ChatOllama(model="llama3.2:3b")
+llm = ChatOllama(model="llama3.2:1b")
 prompt_template = load_prompt_template()
 
 def query_ollama(user_query: str, sensor_data: dict = None, context: str = "") -> str:
